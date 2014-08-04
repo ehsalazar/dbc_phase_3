@@ -1,6 +1,18 @@
 IntroToRails::Application.routes.draw do
-  root :to => 'pages#contact'
-  get '/about', to: 'pages#about'
+
+  # get 'posts/index'
+  # get 'posts/show'
+  # get 'posts/new'
+  # get 'posts/create'
+  # get 'posts/edit'
+  # get 'posts/update'
+  # get 'posts/destroy'
+
+  root :to => 'posts#index'
+  get '/about' => 'pages#about', as: 'about'
+  get '/contact' => 'pages#contact', :as => 'contact'
+
+  resources :posts, :categories
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
