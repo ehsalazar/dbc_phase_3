@@ -1,4 +1,6 @@
 IntroToRails::Application.routes.draw do
+  root :to => 'pages#contact'
+  get '/about', to: 'pages#about'
   # The priority is based upon order of creation:
   # first created -> highest priority.
 
