@@ -69,7 +69,7 @@ describe PostsController do
 
   context "update" do
     let!(:post) { FactoryGirl.create :post }
-    it "updates with valide attributes" do
+    it "updates with valid attributes" do
       expect {
         put :update, :category_id => category.id, :id => post.id, :post => {:title => "yo"}
       }.to change { post.reload.title }.to("yo")

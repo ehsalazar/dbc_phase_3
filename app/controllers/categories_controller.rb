@@ -1,5 +1,4 @@
 class CategoriesController < ApplicationController
-
   def index
     @categories = Category.all
   end
@@ -39,5 +38,4 @@ class CategoriesController < ApplicationController
     category.destroy
     redirect_to root_path
   end
-
 end

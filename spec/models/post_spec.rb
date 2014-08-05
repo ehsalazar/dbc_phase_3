@@ -1,7 +1,5 @@
 require 'spec_helper'
-
 describe Post do
-
   context "validations" do
     it { should validate_presence_of :title }
     it { should validate_presence_of :body }
@@ -11,5 +9,4 @@ describe Post do
   context "associations" do
     it { should belong_to :category }
   end
-
 end

@@ -1,6 +1,8 @@
 development:
   adapter: postgresql
   host: localhost
+  username:
+  password:
   database: intro_to_rails_dev
   pool: 5
   timeout: 5000
@@ -11,6 +13,8 @@ development:
 test:
   adapter: postgresql
   host: localhost
+  username:
+  password:
   database: intro_to_rails_test
   pool: 5
   timeout: 5000
@@ -18,6 +22,8 @@ test:
 production:
   adapter: postgresql
   host: localhost
+  username:
+  password:
   database: intro_to_rails
   pool: 5
   timeout: 5000

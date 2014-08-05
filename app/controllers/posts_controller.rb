@@ -1,5 +1,4 @@
 class PostsController < ApplicationController
-
   def index
     @posts = Post.all
   end
@@ -31,7 +30,7 @@ class PostsController < ApplicationController
   def update
     @post = Post.find(params[:id])
     if @post.update_attributes(params[:post])
-      redirect_to post_path(@post)
+      redirect_to category_post_path(@post.category, @post)
     else
       render :edit
     end
@@ -42,5 +41,4 @@ class PostsController < ApplicationController
     post.destroy
     redirect_to root_path
   end
-
 end

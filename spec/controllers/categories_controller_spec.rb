@@ -1,5 +1,4 @@
 require 'spec_helper'
-
 describe CategoriesController do
 
   context "#index" do

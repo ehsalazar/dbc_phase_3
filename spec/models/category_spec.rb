@@ -1,10 +1,5 @@
 require 'spec_helper'
-
 describe Category do
-  before :each do
-    Post.destroy_all
-    Category.destroy_all
-  end
   context "validations" do
     it { should validate_presence_of :name }
     it "name must be present" do
