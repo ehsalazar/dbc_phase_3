@@ -20,3 +20,8 @@
   color: #fff;
   text-decoration: none;
 }
+
+.navigation h1 a {
+  color: yellow;
+  text-decoration: none;
+}
