@@ -9,15 +9,15 @@ class PostsController < ApplicationController
   end
 
   def new
-    @categories = Category.all
+    @category = Category.find(params[:category_id])
     @post = Post.new
   end
 
   def create
-    category = Category.find_or_create_by_name(params[:category].downcase)
+    category = Category.find(params[:category_id])
     @post = category.posts.build(params[:post])
     if @post.save
-      redirect_to post_path(@post)
+      redirect_to category_post_path(category, @post)
     else
       render :new
     end

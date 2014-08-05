@@ -1,12 +1,10 @@
-<h1>Posts</h1>
-
 <ul>
   <% @posts.each do |post| %>
-  <li><%= link_to post.title, post_path(post) %></li>
+  <li><%= link_to post.title, category_post_path(post) %></li>
   <% end %>
 </ul>
 
-<%= link_to "Create Category", new_category_path %>
-<%= link_to "Create Post", new_post_path %>
+<%= link_to "create category", new_category_path %>
+<%= link_to "create post", new_post_path %>
 
 

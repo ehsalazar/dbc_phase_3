@@ -1,10 +1,6 @@
 <h1>create a new post</h1>
 <ul>
-  <%= form_for @post do |f| %>
-    <li>
-      <%= label_tag :category %>
-      <%= text_field_tag :category %>
-    </li>
+  <%= form_for [@category, @post] do |f| %>
     <li>
       <%= f.label :title %>
       <%= f.text_field :title %>
