@@ -3,6 +3,7 @@
 The purpose of this project is to introduce you to Rails's different moving parts. This will happen through a series of steps in the form of branches. Each step will build on the previous one.
 
 ## installation
+
 - clone the project:
 
 	```bash
