@@ -1,6 +1,6 @@
 var Category = {
   bindEvents: function() {
-    $('.categories-list').on('click', 'a', this.togglePosts);
+    $('.categories-list').on('click', '.foo', this.togglePosts);
   },
 
   togglePosts: function() {
